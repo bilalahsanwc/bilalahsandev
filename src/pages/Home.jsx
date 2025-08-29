@@ -660,7 +660,7 @@ function Home() {
                   target="_blank"
                   className="footer-li-sub"
                   aria-label="Instagram"
-                  href="https://www.instagram.com/visualogics1/"
+                  href="https://www.instagram.com/bilalahsan.dev/"
                 >
                   Instagram
                 </a>
