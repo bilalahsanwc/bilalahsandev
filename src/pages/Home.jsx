@@ -326,7 +326,7 @@ function Home() {
         <div className="About-content">
           <div className="About-content-c1">
             <li>About ME</li>
-            <img src="/myprofilepic.png" alt="Portrait of Bilal Ahsan" />
+            <img src="/favicon.png" alt="Portrait of Bilal Ahsan" />
           </div>
           <div className="About-content-c2">
             <div>
