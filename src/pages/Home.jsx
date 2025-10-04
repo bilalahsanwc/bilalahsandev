@@ -621,7 +621,7 @@ function Home() {
             </ul>
             <ul className="ul-2">
               <li className="footer-li-head">e-mail</li>
-              <li className="footer-li-sub">hmbilal2024a@gmail.com</li>
+              <li className="footer-li-sub">bilalahsan.dev@gmail.com</li>
             </ul>
             <div className="ul-3">
               <li className="footer-li-head">Socials</li>

@@ -464,7 +464,7 @@ nav ul li a:hover {
 }
 
 .services {
-  height: 200vh;
+  height: 250vh;
   width: 100vw;
   max-width: 100%;
   display: flex;
@@ -554,7 +554,7 @@ nav ul li a:hover {
 }
 
 .howiwork {
-  height: 230vh;
+  height: 250vh;
   width: 100vw;
   max-width: 100%;
   background: #1A1A1A;
