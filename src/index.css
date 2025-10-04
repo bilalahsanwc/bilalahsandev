@@ -693,11 +693,13 @@ footer a {
   padding-right: 10px;
   margin-left: auto;
   margin-top: auto;
+  transition: background-color 0.5s ease;
 }
 
 .footer-cta a:hover {
   background: black;
   color: rgb(240, 240, 240);
+  cursor: pointer;
 }
 
 .footer-li-head {
