@@ -132,7 +132,11 @@ function Home() {
             >
               <i className="fa-brands fa-github icon"></i>
             </a>
-            <a href="https://x.com/" target="_blank" aria-label="Twitter">
+            <a
+              href="https://x.com/bilalahsandev"
+              target="_blank"
+              aria-label="Twitter"
+            >
               <i className="fa-brands fa-x-twitter icon"></i>
             </a>
           </div>
@@ -640,7 +644,7 @@ function Home() {
                   target="_blank"
                   className="footer-li-sub"
                   aria-label="Twitter"
-                  href="https://x.com/"
+                  href="https://x.com/bilalahsandev"
                 >
                   Twitter(X)
                 </a>
