@@ -180,7 +180,7 @@ function Home() {
             </ul>
             <div className="dialog-r3">
               <hr />
-              <p className="email">hmbilal2024a@gmail.com</p>
+              <p className="email">bilalahsan.dev@gmail.com</p>
               <a
                 onClick={(e) => {
                   e.preventDefault();
@@ -326,7 +326,7 @@ function Home() {
         <div className="About-content">
           <div className="About-content-c1">
             <li>About ME</li>
-            <img src="/favicon.png" alt="Portrait of Bilal Ahsan" />
+            <img src="./favicon1.jpeg" alt="Portrait of Bilal Ahsan" />
           </div>
           <div className="About-content-c2">
             <div>
