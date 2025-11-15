@@ -362,7 +362,9 @@ function Home() {
           <li>PROJECTS</li>
           <div className="projects-grid-container">
             <div className="project">
-              <img src={DesktopCanvaImg} alt="Ecommerce Store Project" />
+              <a href="https://cartifyproject.vercel.app/" target="_blank">
+                <img src={DesktopCanvaImg} alt="Ecommerce Store Project" />
+              </a>
               <div className="project-paras">
                 <p className="project-name">Cartify</p>
                 <p className="project-client">
@@ -371,25 +373,30 @@ function Home() {
               </div>
             </div>
             <div className="project">
-              <a href="">
+              <a href="https://flow-track-project.vercel.app/" target="_blank">
                 <img
                   src={DesktopCanvaImg2}
                   alt="Landing Page for SaaS productivity tool FlowTrack"
                 />
-                <div className="project-paras">
-                  <p className="project-name">FlowTrack</p>
-                  <p className="project-client">
-                    Landing Page for a Saas Productivity tool
-                  </p>
-                </div>
               </a>
+              <div className="project-paras">
+                <p className="project-name">FlowTrack</p>
+                <p className="project-client">
+                  Landing Page for a Saas Productivity tool
+                </p>
+              </div>
             </div>
             <div className="project">
-              <img src={DesktopCanvaImg3} alt="Multi Step Form Project" />
+              <a
+                href="https://elevora-project.vercel.app/"
+                target="_blank"
+              >
+                <img src={DesktopCanvaImg3} alt="Interactive web portal project." />
+              </a>
               <div className="project-paras">
-                <p className="project-name">Multi-Step Form</p>
+                <p className="project-name">Elevora</p>
                 <p className="project-client">
-                  Interactive multi-step form with email integration
+                  Interactive web portal for an advanced productivity SaaS.
                 </p>
               </div>
             </div>
