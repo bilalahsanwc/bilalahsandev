@@ -371,16 +371,18 @@ function Home() {
               </div>
             </div>
             <div className="project">
-              <img
-                src={DesktopCanvaImg2}
-                alt="Landing Page for SaaS productivity tool FlowTrack"
-              />
-              <div className="project-paras">
-                <p className="project-name">FlowTrack</p>
-                <p className="project-client">
-                  Landing Page for a Saas Productivity tool
-                </p>
-              </div>
+              <a href="">
+                <img
+                  src={DesktopCanvaImg2}
+                  alt="Landing Page for SaaS productivity tool FlowTrack"
+                />
+                <div className="project-paras">
+                  <p className="project-name">FlowTrack</p>
+                  <p className="project-client">
+                    Landing Page for a Saas Productivity tool
+                  </p>
+                </div>
+              </a>
             </div>
             <div className="project">
               <img src={DesktopCanvaImg3} alt="Multi Step Form Project" />
