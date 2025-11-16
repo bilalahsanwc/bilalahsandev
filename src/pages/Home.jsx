@@ -17,7 +17,7 @@ function Home() {
 
   useEffect(() => {
     const containers = document.querySelectorAll(
-      ".customer-info-container, .customer-info-container2"
+      ".customer-info-container, .customer-info-container2, .footer-cta-p, .footer-cta-a"
     );
 
     const observer = new IntersectionObserver(
@@ -30,7 +30,7 @@ function Home() {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.65 }
     );
 
     containers.forEach((c) => observer.observe(c));
@@ -387,11 +387,11 @@ function Home() {
               </div>
             </div>
             <div className="project">
-              <a
-                href="https://elevora-project.vercel.app/"
-                target="_blank"
-              >
-                <img src={DesktopCanvaImg3} alt="Interactive web portal project." />
+              <a href="https://elevora-project.vercel.app/" target="_blank">
+                <img
+                  src={DesktopCanvaImg3}
+                  alt="Interactive web portal project."
+                />
               </a>
               <div className="project-paras">
                 <p className="project-name">Elevora</p>
@@ -594,11 +594,12 @@ function Home() {
       <footer id="contact">
         <div className="footer-content">
           <div className="footer-cta">
-            <p>
+            <p className="footer-cta-p">
               Why settle for average when your brand can shine? <br />
               Let’s set the standard!
             </p>
             <a
+              className="footer-cta-a"
               onClick={(e) => {
                 e.preventDefault();
                 setOpenProjectDialog(true);

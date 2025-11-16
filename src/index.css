@@ -679,14 +679,22 @@ footer a {
   height: 15vh;
 }
 
-.footer-cta p {
+.footer-cta-p {
   color: black;
   word-spacing: 0.5px;
   font-size: 2em;
   margin-top: auto;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: transform 2s ease, opacity 2s ease;
 }
 
-.footer-cta a {
+.footer-cta-p.leaving {
+  opacity: 0.5;
+  transform: translateX(-35px);
+}
+
+.footer-cta-a {
   color: black;
   font-size: 1.25rem;
   background: rgb(185, 185, 185);
@@ -703,7 +711,14 @@ footer a {
   padding-right: 10px;
   margin-left: auto;
   margin-top: auto;
-  transition: background-color 0.5s ease;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: background-color 0.5s ease, transform 0.5s ease, opacity 0.5s ease;
+}
+
+.footer-cta-a.leaving {
+  opacity: 0.5;
+  transform: translateX(35px);
 }
 
 .footer-cta a:hover {
@@ -724,6 +739,7 @@ footer a {
   flex-direction: row;
   justify-content: space-between;
 }
+
 
 .footer-ul-container a:hover {
   cursor: pointer;
