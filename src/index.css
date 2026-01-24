@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Ppneuemontreal';
-  src: url('/fonts/ppneuemontreal-medium.otf') format('opentype');
+  font-family: "Ppneuemontreal";
+  src: url("/fonts/ppneuemontreal-medium.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,9 +16,8 @@ body {
   height: 100%;
 }
 
-
 body {
-  font-family: 'Ppneuemontreal', Arial, sans-serif;
+  font-family: "Ppneuemontreal", Arial, sans-serif;
 }
 
 html {
@@ -34,7 +33,7 @@ nav {
   height: 10vh !important;
   justify-content: center;
   align-items: center;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   text-align: center;
   color: white;
 }
@@ -49,9 +48,7 @@ nav {
   text-align: center;
   /* margin: 0 auto; */
   /* centers horizontally */
-
 }
-
 
 nav h1 a {
   text-decoration: none;
@@ -113,11 +110,10 @@ nav ul li a:hover {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background: #1A1A1A;
+  background: #1a1a1a;
   color: white;
   text-align: left;
   height: 100%;
-
 }
 
 .Home-content-container {
@@ -149,14 +145,12 @@ nav ul li a:hover {
   justify-items: space-between;
   justify-content: space-between;
   width: 100%;
-
 }
 
 .Home-heading {
   font-size: 2.5em;
   text-align: left;
 }
-
 
 .hero-row p {
   font-size: 1.25rem;
@@ -212,12 +206,10 @@ nav ul li a:hover {
   font-size: 20px;
 }
 
-
 .About-content-c1 img {
   width: 17.5vh;
   border-radius: 12.5px;
 }
-
 
 .About-content-c2 {
   display: flex;
@@ -233,7 +225,6 @@ nav ul li a:hover {
   line-height: 1.35;
   color: black;
 }
-
 
 .About-content-c2-span {
   font-size: 1.05em;
@@ -284,7 +275,6 @@ nav ul li a:hover {
   justify-content: center;
   background-color: white;
   border-bottom: 2.5px solid rgb(185, 185, 185);
-
 }
 
 .projects-content {
@@ -295,7 +285,6 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   gap: 10vh;
-
 }
 
 .projects li {
@@ -415,7 +404,6 @@ nav ul li a:hover {
   font-size: 20px;
 }
 
-
 .customer-info-container {
   display: flex;
   flex-direction: column;
@@ -453,7 +441,7 @@ nav ul li a:hover {
   word-wrap: break-word;
   font-size: 1.55em;
   font-weight: 500;
-  font-family: 'Ppneuemontreal', Arial, sans-serif;
+  font-family: "Ppneuemontreal", Arial, sans-serif;
   line-height: 1.4;
   word-spacing: 0.5vw;
 }
@@ -464,7 +452,6 @@ nav ul li a:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
 }
-
 
 .project-info {
   display: flex;
@@ -480,7 +467,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1A1A1A;
+  background: #1a1a1a;
   border-bottom: 1px solid rgb(105, 105, 105);
 }
 
@@ -567,7 +554,7 @@ nav ul li a:hover {
   height: 250vh;
   width: 100vw;
   max-width: 100%;
-  background: #1A1A1A;
+  background: #1a1a1a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -628,7 +615,7 @@ nav ul li a:hover {
 }
 
 .part-desc {
-  color: rgb(185, 185, 185)
+  color: rgb(185, 185, 185);
 }
 
 .howiwork-head {
@@ -657,7 +644,6 @@ footer {
 
 footer li {
   list-style-type: none;
-
 }
 
 footer a {
@@ -740,7 +726,6 @@ footer a {
   justify-content: space-between;
 }
 
-
 .footer-ul-container a:hover {
   cursor: pointer;
   color: rgb(105, 105, 105);
@@ -749,7 +734,7 @@ footer a {
 .footer-li-sub {
   color: black;
   font-size: 1.15rem;
-  font-family: 'Ppneuemontreal', Arial, sans-serif;
+  font-family: "Ppneuemontreal", Arial, sans-serif;
 }
 
 .myname {
@@ -784,7 +769,6 @@ footer a {
   align-items: flex-start;
   justify-content: space-between;
   gap: 2.5vh;
-
 }
 
 .project-dialog-content i {
@@ -801,7 +785,6 @@ footer a {
   cursor: pointer;
 }
 
-
 .project-dialog-content h2 {
   color: black;
   font-weight: 300;
@@ -813,7 +796,6 @@ footer a {
   font-weight: 300;
   font-size: 1.25rem;
   margin-bottom: 10vh;
-
 }
 
 .project-form form {
@@ -838,7 +820,6 @@ footer a {
   border-radius: 10px;
   padding: 2vw;
 }
-
 
 .project-form label input {
   border: none;
@@ -903,7 +884,7 @@ footer a {
   right: 5vw;
   left: 5vw;
   background-color: white;
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-size: 1rem;
 }
 
@@ -911,9 +892,7 @@ footer a {
   display: none;
 }
 
-
 @media screen and (max-width: 768px) {
-
   * {
     margin: 0%;
     padding: 0%;
@@ -923,7 +902,6 @@ footer a {
   html {
     overflow-y: scroll;
   }
-
 
   .nav-links {
     display: none;
@@ -949,7 +927,7 @@ footer a {
     height: 10vh !important;
     justify-content: center;
     align-items: center;
-    background-color: #1A1A1A;
+    background-color: #1a1a1a;
     text-align: center;
     color: white;
   }
@@ -1007,7 +985,6 @@ footer a {
     position: absolute;
     top: 15vh;
   }
-
 
   .dialog-r3 {
     position: absolute;
@@ -1079,7 +1056,6 @@ footer a {
     cursor: pointer;
     color: rgb(240, 240, 240);
   }
-
 
   .Home-heading {
     font-size: 1.5em;
@@ -1200,7 +1176,6 @@ footer a {
     justify-content: center;
     background-color: white;
     border-bottom: 2.5px solid rgb(185, 185, 185);
-
   }
 
   .projects-content {
@@ -1211,7 +1186,6 @@ footer a {
     align-items: center;
     justify-content: center;
     gap: 5vh;
-
   }
 
   .projects li {
@@ -1248,7 +1222,6 @@ footer a {
   .project:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-
   }
 
   .project img {
@@ -1275,9 +1248,7 @@ footer a {
     display: flex;
     flex-direction: column;
     gap: 1vh;
-
   }
-
 
   .testimonials {
     height: 120vh;
@@ -1322,7 +1293,7 @@ footer a {
   .services {
     height: 310vh;
     width: 100vw;
-    background-color: #1A1A1A;
+    background-color: #1a1a1a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1375,17 +1346,17 @@ footer a {
   }
 
   .service-head {
-    font-size: 1.30rem;
+    font-size: 1.3rem;
     margin-right: auto;
   }
 
   .service-desc {
-    font-size: 1.20rem;
+    font-size: 1.2rem;
   }
 
   .howiwork {
     height: 290vh;
-    background-color: #1A1A1A;
+    background-color: #1a1a1a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1419,7 +1390,6 @@ footer a {
     /* height: 20vh; */
     padding-top: 0;
     padding-bottom: 0;
-
   }
 
   .part-desc,
@@ -1445,7 +1415,6 @@ footer a {
     position: relative;
     margin: 0;
   }
-
 
   .footer-cta {
     display: flex;
@@ -1517,7 +1486,6 @@ footer a {
     align-items: flex-start;
     justify-content: space-between;
     gap: 2.5vh;
-
   }
 
   .project-dialog-content i {
@@ -1541,7 +1509,6 @@ footer a {
     line-height: 1.25;
     font-size: 1.5rem;
     margin-bottom: 4vh;
-
   }
 
   .project-form form {
@@ -1565,7 +1532,6 @@ footer a {
     border-radius: 10px;
     padding: 2vw;
   }
-
 
   .project-form label input {
     border: none;
@@ -1616,8 +1582,4 @@ footer a {
     height: 30vh;
     padding: 2vw;
   }
-
-
-
-
 }

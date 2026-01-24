@@ -17,7 +17,7 @@ function Home() {
 
   useEffect(() => {
     const containers = document.querySelectorAll(
-      ".customer-info-container, .customer-info-container2, .footer-cta-p, .footer-cta-a"
+      ".customer-info-container, .customer-info-container2, .footer-cta-p, .footer-cta-a",
     );
 
     const observer = new IntersectionObserver(
@@ -30,7 +30,7 @@ function Home() {
           }
         });
       },
-      { threshold: 0.65 }
+      { threshold: 0.65 },
     );
 
     containers.forEach((c) => observer.observe(c));
@@ -682,7 +682,7 @@ function Home() {
             </div>
           </div>
           <div className="myname">
-            © 2025 Bilal Ahsan | Code, Focus, & Great Design. All rights earned.
+            © 2026 Bilal Ahsan | Code, Focus, & Great Design. All rights earned.
           </div>
         </div>
       </footer>
