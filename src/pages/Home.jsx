@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "../index.css";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import DesktopCanvaImg from "../assets/project1-desktop1canva.png";
-import DesktopCanvaImg2 from "../assets/project2-desktop2canva.png";
+import townCenterDentistry from "../assets/hero.png";
 import DesktopCanvaImg3 from "../assets/project3-desktop1canva.png";
 
 function Home() {
@@ -34,21 +34,19 @@ function Home() {
     );
 
     containers.forEach((c) => observer.observe(c));
-    return () => observer.disconnect(); // 🧹 cleanup
+    return () => observer.disconnect();
   }, []);
 
   const testimonials = [
     {
       review:
         '"Bilal delivered high-quality work exactly as promised—and even ahead of schedule. Communication was smooth and professional throughout the project. They understood my requirements perfectly and went above and beyond to ensure I was happy with the final result. Highly recommend and will definitely work with them again in the future!"',
-      Price: "US$100 - US$200",
       duration: "6 weeks",
       Country: "Client From Morroco",
     },
     {
       review:
         '"⭐️⭐️⭐️⭐️⭐️ We had an amazing experience working with Bilal! He created a custom project for our business that looks professional, functions perfectly, and makes sharing our info incredibly easy. He was fast, communicative, and really took the time to make sure everything matched our brand. Highly recommend Bilal if you’re looking for top-quality work — he nailed it!"',
-      Price: "US$50 - US$100",
       duration: "1 week",
       Country: "Client From USA",
     },
@@ -71,9 +69,9 @@ function Home() {
 
   useEffect(() => {
     if (openDialog || openProjectDialog) {
-      document.body.style.overflow = "hidden"; // lock scrolling
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"; // restore scrolling
+      document.body.style.overflow = "auto";
     }
   }, [openDialog, openProjectDialog]);
 
@@ -82,7 +80,7 @@ function Home() {
     e.preventDefault();
     const form = e.target;
     const data = new FormData(form);
-    const res = await fetch("https://formspree.io/f/mqadzbgl", {
+    const res = await fetch("[https://formspree.io/f/mqadzbgl](https://formspree.io/f/mqadzbgl)", {
       method: "POST",
       body: data,
       headers: { Accept: "application/json" },
@@ -119,21 +117,21 @@ function Home() {
           </ul>
           <div className="nav-icons">
             <a
-              href="https://www.linkedin.com/in/bilal-ahsan-50b728314/"
+              href="[https://www.linkedin.com/in/bilal-ahsan-50b728314/](https://www.linkedin.com/in/bilal-ahsan-50b728314/)"
               target="_blank"
               aria-label="LinkedIn"
             >
               <i className="fa-brands fa-linkedin icon"></i>
             </a>
             <a
-              href="https://github.com/bilalahsanwc"
+              href="[https://github.com/bilalahsanwc](https://github.com/bilalahsanwc)"
               target="_blank"
               aria-label="GitHub"
             >
               <i className="fa-brands fa-github icon"></i>
             </a>
             <a
-              href="https://x.com/bilalahsandev"
+              href="[https://x.com/bilalahsandev](https://x.com/bilalahsandev)"
               target="_blank"
               aria-label="Twitter"
             >
@@ -150,6 +148,7 @@ function Home() {
           </button>
         </div>
       </nav>
+
       {openDialog && (
         <div className="dialog">
           <div className="dialog-content">
@@ -197,6 +196,7 @@ function Home() {
           </div>
         </div>
       )}
+
       {openProjectDialog && (
         <div className="project-dialog">
           <div className="project-dialog-content">
@@ -283,6 +283,7 @@ function Home() {
           </div>
         </div>
       )}
+
       {status === "SUCCESS" && (
         <p className="submit-alert">
           <i
@@ -293,6 +294,7 @@ function Home() {
           be in touch soon to discuss your project in detail.
         </p>
       )}
+
       {status === "ERROR" && (
         <p className="submit-alert">
           <i
@@ -303,17 +305,19 @@ function Home() {
           again or contact me at hmbilal2024a@gmail.com.
         </p>
       )}
+
       <section className="Home-content-container">
         <div className="Home-content">
           <div className="Home-heading">
-            <h1>Web Developer &</h1>
-            <h1>Design Doctor</h1>
+            <h1>Full-Stack MERN</h1>
+            <h1>Web Developer</h1>
           </div>
           <hr className="home-hr" />
           <div className="hero-row">
             <p>
-              I create websites that sell <br />
-              your vision.
+              I build websites that turn
+              <br />
+              ideas into real businesses.
             </p>
             <a
               onClick={(e) => {
@@ -326,26 +330,33 @@ function Home() {
           </div>
         </div>
       </section>
+
       <section id="about" className="About-container">
         <div className="About-content">
           <div className="About-content-c1">
             <li>About ME</li>
             <img src="./favicon1.jpeg" alt="Portrait of Bilal Ahsan" />
           </div>
+
           <div className="About-content-c2">
             <div>
               Hi, I'm Bilal. <br />
               <span className="About-content-c2-span">
-                I design and develop modern, responsive websites.
+                I design and develop modern, full-stack web experiences.
               </span>
             </div>
+
             <p>
-              You’ve made it here and now it’s my job to build you a website
-              that actually gets attention and grows your business. I’m obsessed
-              with good design and smooth functionality, so if you’re up for it,
-              I’d love to chat about what makes a great website to get you the
-              place you deserve on the web.
+              I build modern, responsive websites and full-stack web
+              applications using the MERN stack. From polished user interfaces
+              and responsive layouts to MongoDB databases, business forms,
+              automated email workflows, payment integrations, and CMS
+              functionality, I focus on creating websites that look great and
+              work reliably. Whether you have an existing design, a business
+              idea, or need a complete website built from scratch, I turn it
+              into a functional digital experience built around your goals.
             </p>
+
             <a
               onClick={(e) => {
                 e.preventDefault();
@@ -357,13 +368,16 @@ function Home() {
           </div>
         </div>
       </section>
+
       <section id="projects" className="projects">
         <div className="projects-content">
           <li>PROJECTS</li>
           <div className="projects-grid-container">
             <div className="project">
-              <a href="https://cartifyproject.vercel.app/" target="_blank">
-                <img src={DesktopCanvaImg} alt="Ecommerce Store Project" />
+              <a
+                href="#"
+              >
+                <img src="/images/3.webp" alt="Ecommerce Store Project" />
               </a>
               <div className="project-paras">
                 <p className="project-name">Cartify</p>
@@ -372,24 +386,31 @@ function Home() {
                 </p>
               </div>
             </div>
+
             <div className="project">
-              <a href="https://flow-track-project.vercel.app/" target="_blank">
+              <a
+                href="https://zentooth.bilalahsan.dev/"
+                target="_blank"
+              >
                 <img
-                  src={DesktopCanvaImg2}
-                  alt="Landing Page for SaaS productivity tool FlowTrack"
+                  src="/images/2.webp"
+                  alt="Hero section of a dental clinic"
                 />
               </a>
               <div className="project-paras">
-                <p className="project-name">FlowTrack</p>
+                <p className="project-name">Zentooth Endodontics</p>
                 <p className="project-client">
-                  Landing Page for a Saas Productivity tool
+                  Full-stack website for a Endodontics clinic
                 </p>
               </div>
             </div>
+
             <div className="project">
-              <a href="https://elevora-project.vercel.app/" target="_blank">
+              <a
+                href="#"
+              >
                 <img
-                  src={DesktopCanvaImg3}
+                  src="/images/1.webp"
                   alt="Interactive web portal project."
                 />
               </a>
@@ -403,6 +424,7 @@ function Home() {
           </div>
         </div>
       </section>
+
       <section className="testimonials" id="testimonials">
         <div className="testimonials-content">
           <div className="testimonials-c1">
@@ -413,112 +435,136 @@ function Home() {
             <div className="customer-info-container2">
               <p className="customer-country">{clientCountry}</p>
               <div className="project-info">
-                <p className="customer-price">Cost: {priceText}</p>
-                <p className="customer-duration">Duration: {durationText}</p>
+                <p className="customer-duration">
+                  Duration: {durationText}
+                </p>
               </div>
             </div>
           </div>
+
           <div className="testimonials-c2">
-            <button onClick={showPrevReview} className="left-btn review-btn">
+            <button
+              onClick={showPrevReview}
+              className="left-btn review-btn"
+            >
               <FontAwesomeIcon icon={faArrowLeft} />
             </button>
-            <button onClick={showNextReview} className="right-btn review-btn">
+            <button
+              onClick={showNextReview}
+              className="right-btn review-btn"
+            >
               <FontAwesomeIcon icon={faArrowRight} />
             </button>
           </div>
         </div>
       </section>
+
       <section className="services" id="services">
         <div className="services-content">
           <div className="service-intro">
             <li>MY Services</li>
             <h5>
-              Web Design, Figma to React, Mobile-First Builds, Multi-Page Forms,
-              Responsive Web Apps, SEO Basics. I deliver clean, scalable
-              websites that just work. And yes, I fix bugs before they become
-              your problem.
+              Full-Stack MERN Development, Modern Web Design, Figma to React,
+              Responsive Web Apps, MongoDB, Business Forms, Email Automation,
+              Payment Integrations, CMS Development, and SEO Basics. I build
+              complete, scalable websites that look great, work reliably, and
+              are built around real business needs.
             </h5>
           </div>
+
           <div className="service-grid-div">
             <div className="service-container">
               <p className="service-head">
-                01. <span>Web Development</span>
+                01. <span>Full-Stack Web Development</span>
               </p>
               <hr />
               <p className="service-desc">
-                I build fast, clean, and interactive websites using HTML, CSS,
-                JavaScript, and React. I write modern, maintainable code and
-                ensure every site runs smoothly.
+                I build complete web applications using the MERN stack:
+                MongoDB, Express, React, and Node.js. From responsive
+                interfaces to APIs, databases, business logic, and deployment,
+                I handle both the frontend and backend.
               </p>
             </div>
+
             <div className="service-container">
               <p className="service-head">
                 02. <span>Design (figma, screenshot etc) to Code</span>
               </p>
               <hr />
               <p className="service-desc">
-                Whether it’s a Figma file, a raw image, or just a visual
-                reference, I turn any design into pixel-perfect, responsive code
-                bringing your UI to life just as imagined.
+                Whether it’s a Figma file, a raw image, or a visual reference,
+                I turn designs into polished, responsive interfaces while
+                preserving the intended layout, typography, spacing, and
+                interactions.
               </p>
             </div>
+
             <div className="service-container">
               <p className="service-head">
-                03. <span>Responsiveness (Mobile First if required)</span>
+                03. <span>Responsive & Mobile-First Development</span>
               </p>
               <hr />
               <p className="service-desc">
-                I ensure your website adapts beautifully to all screen sizes . I
-                often use the Mobile First approach, meaning your site is not
-                just responsive but optimized from the smallest screen up for
-                real-world usability.
+                I build websites that adapt cleanly across desktop, tablet,
+                mobile, and small screens. When appropriate, I use a mobile
+                first approach so the experience remains usable and polished
+                at every size.
               </p>
             </div>
+
             <div className="service-container">
               <p className="service-head">
-                04. <span>SEO Basics</span>
+                04. <span>Forms, Email & Business Automation</span>
               </p>
               <hr />
               <p className="service-desc">
-                I implement on-page SEO essentials like proper HTML, semantic
-                tags, alt attributes, and fast load times giving your website a
-                better shot at ranking higher in search results.
+                I build functional forms for contact, registration, leads, and
+                other business workflows, including backend processing and
+                automated email delivery so submissions reach the right place
+                reliably.
               </p>
             </div>
+
             <div className="service-container">
               <p className="service-head">
-                05. <span>Web Apps (Multi-Step Form)</span>
+                05. <span>Payments, Databases & CMS</span>
               </p>
               <hr />
               <p className="service-desc">
-                I build functional, user-friendly web apps such as smooth
-                transitions, and real-time interactivity. These elements enhance
-                user experience and are perfect for lead generation.
+                I integrate payment systems such as PayPal, connect websites
+                to MongoDB databases, and build CMS functionality when a
+                business needs to manage its content and data without relying
+                on a developer for every update.
               </p>
             </div>
+
             <div className="service-container">
               <p className="service-head">
                 06. <span>Bug Fixing and Adjustments</span>
               </p>
               <hr />
               <p className="service-desc">
-                Already have a site that’s broken or just not behaving right? I
-                fix layout shifts, broken styles, mobile glitches, and
-                responsiveness issues.
+                Already have a site that’s broken or not behaving correctly? I
+                troubleshoot layout issues, broken functionality, mobile
+                glitches, API problems, form issues, and responsiveness
+                problems to get your website working properly again.
               </p>
             </div>
           </div>
         </div>
       </section>
+
       <section className="howiwork" id="howiwork">
         <div className="howiwork-content">
           <div className="howiwork-head">
             <li>How I WORK</li>
             <h5>
               This is where you'll discover the quality behind my work. How I
-              turn ideas into clean, high-performing websites.
+              turn ideas into clean, high-performing websites and complete
+              digital solutions.
             </h5>
           </div>
+
           <div className="sequence-part-container">
             <div className="sequence-part">
               <hr />
@@ -526,45 +572,52 @@ function Home() {
                 <p className="part-no">01.</p>
                 <p className="part-name">Planning</p>
                 <p className="part-desc">
-                  I begin by understanding your brand, goals, and audience to
-                  plan a website that fits your exact needs and vision.
+                  I begin by understanding your business, goals, audience, and
+                  requirements so I can plan a website that fits your exact
+                  needs.
                 </p>
               </div>
             </div>
+
             <div className="sequence-part">
               <hr />
               <div>
                 <p className="part-no">02.</p>
                 <p className="part-name">User Interface/UX Design</p>
                 <p className="part-desc">
-                  I turn rough ideas or figma designs into user-friendly layouts
-                  with clear structure and ensure every page looks clean.
+                  I turn rough ideas, Figma designs, or visual references into
+                  clear, user-friendly layouts with strong structure,
+                  responsive behavior, and attention to detail.
                 </p>
               </div>
             </div>
+
             <div className="sequence-part">
               <hr />
               <div>
                 <p className="part-no">03.</p>
-                <p className="part-name">Development</p>
+                <p className="part-name">Full-Stack Development</p>
                 <p className="part-desc">
-                  There is where the actual creation of the website starts. I
-                  bring those ideas and designs to life with responsive and
-                  interactive code.
+                  I bring the design to life with responsive React interfaces,
+                  backend APIs, Node.js and Express functionality, MongoDB data,
+                  and the business logic required behind the experience.
                 </p>
               </div>
             </div>
+
             <div className="sequence-part">
               <hr />
               <div>
                 <p className="part-no">04.</p>
                 <p className="part-name">Testing & Debugging</p>
                 <p className="part-desc">
-                  Every site is tested across browsers and devices to eliminate
-                  bugs and ensure a polished user experience.
+                  Every site is tested across browsers, devices, forms,
+                  integrations, and important user flows to eliminate bugs and
+                  ensure a polished experience.
                 </p>
               </div>
             </div>
+
             <div className="sequence-part">
               <hr />
               <div>
@@ -572,25 +625,29 @@ function Home() {
                 <p className="part-name">SEO & Performance Optimization</p>
                 <p className="part-desc">
                   I handle essential SEO setup including proper meta tags, page
-                  titles, alt attributes, and semantic HTML structure along with
-                  performance optimizations.
+                  titles, alt attributes, semantic HTML, and performance
+                  improvements to give the website a stronger technical
+                  foundation.
                 </p>
               </div>
             </div>
+
             <div className="sequence-part">
               <hr />
               <div>
                 <p className="part-no">06.</p>
                 <p className="part-name">Launch</p>
                 <p className="part-desc">
-                  Once everything is perfect, I connect your domain, and make
-                  sure it's fully functional, secure, and ready to go public.
+                  Once everything is ready, I connect the domain, configure the
+                  production environment, verify the website and integrations,
+                  and make sure everything is ready to go public.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <footer id="contact">
         <div className="footer-content">
           <div className="footer-cta">
@@ -608,7 +665,9 @@ function Home() {
               Start Project
             </a>
           </div>
+
           <hr />
+
           <div className="footer-ul-container">
             <ul className="ul-1">
               <li className="footer-li-head">Main</li>
@@ -633,17 +692,19 @@ function Home() {
                 </a>
               </li>
             </ul>
+
             <ul className="ul-2">
               <li className="footer-li-head">e-mail</li>
               <li className="footer-li-sub">bilalahsan.dev@gmail.com</li>
             </ul>
+
             <div className="ul-3">
               <li className="footer-li-head">Socials</li>
               <li>
                 <a
                   target="_blank"
                   className="footer-li-sub"
-                  href="https://github.com/bilalahsanwc"
+                  href="[https://github.com/bilalahsanwc](https://github.com/bilalahsanwc)"
                   aria-label="GitHub"
                 >
                   GitHub
@@ -654,7 +715,7 @@ function Home() {
                   target="_blank"
                   className="footer-li-sub"
                   aria-label="Twitter"
-                  href="https://x.com/bilalahsandev"
+                  href="[https://x.com/bilalahsandev](https://x.com/bilalahsandev)"
                 >
                   Twitter(X)
                 </a>
@@ -664,7 +725,7 @@ function Home() {
                   target="_blank"
                   className="footer-li-sub"
                   aria-label="LinkedIn"
-                  href="https://www.linkedin.com/in/bilal-ahsan-50b728314/"
+                  href="[https://www.linkedin.com/in/bilal-ahsan-50b728314/](https://www.linkedin.com/in/bilal-ahsan-50b728314/)"
                 >
                   LinkedIn
                 </a>
@@ -674,13 +735,14 @@ function Home() {
                   target="_blank"
                   className="footer-li-sub"
                   aria-label="Instagram"
-                  href="https://www.instagram.com/bilalahsan.dev/"
+                  href="[https://www.instagram.com/bilalahsan.dev/](https://www.instagram.com/bilalahsan.dev/)"
                 >
                   Instagram
                 </a>
               </li>
             </div>
           </div>
+
           <div className="myname">
             © 2026 Bilal Ahsan | Code, Focus, & Great Design. All rights earned.
           </div>
