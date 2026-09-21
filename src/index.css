@@ -1113,7 +1113,7 @@ footer a {
   }
 
   .About-container {
-    height: 100vh;
+    min-height: 120vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -1305,7 +1305,7 @@ footer a {
   }
 
   .services {
-    height: 310vh;
+    min-height: 320vh;
     width: 100%;
     background-color: #1a1a1a;
     display: flex;
