@@ -80,7 +80,7 @@ function Home() {
     e.preventDefault();
     const form = e.target;
     const data = new FormData(form);
-    const res = await fetch("[https://formspree.io/f/mqadzbgl](https://formspree.io/f/mqadzbgl)", {
+    const res = await fetch("https://formspree.io/f/mqadzbgl", {
       method: "POST",
       body: data,
       headers: { Accept: "application/json" },
