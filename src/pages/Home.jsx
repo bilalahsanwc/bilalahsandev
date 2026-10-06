@@ -117,21 +117,21 @@ function Home() {
           </ul>
           <div className="nav-icons">
             <a
-              href="[https://www.linkedin.com/in/bilal-ahsan-50b728314/](https://www.linkedin.com/in/bilal-ahsan-50b728314/)"
+              href="https://www.linkedin.com/in/bilal-ahsan-50b728314/"
               target="_blank"
               aria-label="LinkedIn"
             >
               <i className="fa-brands fa-linkedin icon"></i>
             </a>
             <a
-              href="[https://github.com/bilalahsanwc](https://github.com/bilalahsanwc)"
+              href="https://github.com/bilalahsanwc"
               target="_blank"
               aria-label="GitHub"
             >
               <i className="fa-brands fa-github icon"></i>
             </a>
             <a
-              href="[https://x.com/bilalahsandev](https://x.com/bilalahsandev)"
+              href="https://x.com/bilalahsandev"
               target="_blank"
               aria-label="Twitter"
             >
@@ -715,7 +715,7 @@ function Home() {
                   target="_blank"
                   className="footer-li-sub"
                   aria-label="Twitter"
-                  href="[https://x.com/bilalahsandev](https://x.com/bilalahsandev)"
+                  href="https://x.com/bilalahsandev"
                 >
                   Twitter(X)
                 </a>
@@ -725,7 +725,7 @@ function Home() {
                   target="_blank"
                   className="footer-li-sub"
                   aria-label="LinkedIn"
-                  href="[https://www.linkedin.com/in/bilal-ahsan-50b728314/](https://www.linkedin.com/in/bilal-ahsan-50b728314/)"
+                  href="https://www.linkedin.com/in/bilal-ahsan-50b728314/"
                 >
                   LinkedIn
                 </a>
@@ -735,7 +735,7 @@ function Home() {
                   target="_blank"
                   className="footer-li-sub"
                   aria-label="Instagram"
-                  href="[https://www.instagram.com/bilalahsan.dev/](https://www.instagram.com/bilalahsan.dev/)"
+                  href="https://www.instagram.com/bilalahsan.dev/"
                 >
                   Instagram
                 </a>
