@@ -3,6 +3,15 @@ import { useEffect, useState } from "react";
 import "../index.css";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import toast from "react-hot-toast";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  fadeRight,
+  fadeIn,
+  fadeUp,
+  fadeLeft,
+  scaleIn,
+} from "../assets/animation.js";
+
 function Home() {
   const [idx, setIdx] = useState(0);
   const [reviewText, setReviewText] = useState("");
@@ -192,94 +201,94 @@ function Home() {
           </div>
         </div>
       )}
-
-      {openProjectDialog && (
-        <div className="project-dialog">
-          <div className="project-dialog-content">
-            <i
-              onClick={() => setOpenProjectDialog(false)}
-              className="fa-solid fa-circle-xmark"
-            ></i>
-            <h2>Start your project</h2>
-            <p>
-              Ready to start? Share your project using the form or email, and
-              I’ll respond quickly.
-            </p>
-            <div className="project-form">
-              <form onSubmit={handleSubmit}>
-                <div className="form-inputdiv">
-                  <label>
-                    name
-                    <input
-                      required
-                      name="name"
-                      type="text"
-                      placeholder="e.g. Bilal Ahsan"
-                    />
-                  </label>
-                </div>
-                <div className="form-inputdiv">
-                  <label>
-                    Company
-                    <input
-                      name="company"
-                      type="text"
-                      placeholder="Enter Company name"
-                    />
-                  </label>
-                </div>
-                <div className="form-inputdiv">
-                  <label>
-                    e-mail
-                    <input
-                      required
-                      type="email"
-                      name="email"
-                      placeholder="e.g. hmbilal2024a@gmail.com"
-                    />
-                  </label>
-                </div>
-                <div className="form-inputdiv">
-                  <label>
-                    Phone Number
-                    <input
-                      required
-                      pattern="[0-9+ ]+"
-                      inputMode="numeric"
-                      type="tel"
-                      name="phone number"
-                      placeholder="Your phone no."
-                    />
-                  </label>
-                </div>
-                <div className="form-areadiv">
-                  <label>
-                    Project Details
-                    <textarea
-                      required
-                      name="details"
-                      id="details"
-                      placeholder="Briefly describe your project"
-                    ></textarea>
-                  </label>
-                </div>
-                <div className="form-areadiv">
-                  <label>
-                    Extra Info
-                    <textarea
-                      name="extra info"
-                      id="news"
-                      placeholder="Any extra informations?"
-                    ></textarea>
-                  </label>
-                </div>
-                <button type="submit">Submit</button>
-              </form>
+      <AnimatePresence>
+        {openProjectDialog && (
+          <motion.div {...fadeRight} className="project-dialog">
+            <div className="project-dialog-content">
+              <i
+                onClick={() => setOpenProjectDialog(false)}
+                className="fa-solid fa-circle-xmark"
+              ></i>
+              <h2>Start your project</h2>
+              <p>
+                Ready to start? Share your project using the form or email, and
+                I’ll respond quickly.
+              </p>
+              <div className="project-form">
+                <form onSubmit={handleSubmit}>
+                  <div className="form-inputdiv">
+                    <label>
+                      Name
+                      <input
+                        required
+                        name="name"
+                        type="text"
+                        placeholder="e.g. Bilal Ahsan"
+                      />
+                    </label>
+                  </div>
+                  <div className="form-inputdiv">
+                    <label>
+                      Company
+                      <input
+                        name="company"
+                        type="text"
+                        placeholder="Enter Company name"
+                      />
+                    </label>
+                  </div>
+                  <div className="form-inputdiv">
+                    <label>
+                      e-mail
+                      <input
+                        required
+                        type="email"
+                        name="email"
+                        placeholder="e.g. bilal@bilalahsan.dev"
+                      />
+                    </label>
+                  </div>
+                  <div className="form-inputdiv">
+                    <label>
+                      Phone Number
+                      <input
+                        required
+                        pattern="[0-9+ ]+"
+                        inputMode="numeric"
+                        type="tel"
+                        name="phone number"
+                        placeholder="Your phone no."
+                      />
+                    </label>
+                  </div>
+                  <div className="form-areadiv">
+                    <label>
+                      Project Details
+                      <textarea
+                        required
+                        name="details"
+                        id="details"
+                        placeholder="Briefly describe your project"
+                      ></textarea>
+                    </label>
+                  </div>
+                  <div className="form-areadiv">
+                    <label>
+                      Extra Info
+                      <textarea
+                        name="extra info"
+                        id="news"
+                        placeholder="Any extra informations?"
+                      ></textarea>
+                    </label>
+                  </div>
+                  <button className="submit-btn" type="submit">Submit</button>
+                </form>
+              </div>
             </div>
-          </div>
-        </div>
-      )}
-
+          </motion.div>
+        )}
+      </AnimatePresence>
       <section className="Home-content-container">
         <div className="Home-content">
           <div className="Home-heading">
@@ -288,25 +297,26 @@ function Home() {
           </div>
           <hr className="home-hr" />
           <div className="hero-row">
-            <p>
+            <motion.p {...fadeLeft}>
               I build websites that turn
               <br />
               ideas into real businesses.
-            </p>
-            <a
+            </motion.p>
+            <motion.a
+              {...fadeRight}
               onClick={(e) => {
                 e.preventDefault();
                 setOpenProjectDialog(true);
               }}
             >
               Start Your Project
-            </a>
+            </motion.a>
           </div>
         </div>
       </section>
 
       <section id="about" className="About-container">
-        <div className="About-content">
+        <motion.div {...fadeUp} className="About-content">
           <div className="About-content-c1">
             <li>About ME</li>
             <img src="./favicon1.jpeg" alt="Portrait of Bilal Ahsan" />
@@ -340,26 +350,13 @@ function Home() {
               Discuss Your Project Idea
             </a>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       <section id="projects" className="projects">
         <div className="projects-content">
           <li>PROJECTS</li>
           <div className="projects-grid-container">
-            <div className="project">
-              <a
-                href="#"
-              >
-                <img src="/images/3.webp" alt="Ecommerce Store Project" />
-              </a>
-              <div className="project-paras">
-                <p className="project-name">Cartify</p>
-                <p className="project-client">
-                  React Ecommerce website for Online Selling
-                </p>
-              </div>
-            </div>
 
             <div className="project">
               <a
@@ -378,6 +375,22 @@ function Home() {
                 </p>
               </div>
             </div>
+            <div className="project">
+              <a
+                href="#"
+              >
+                <img
+                  src="/images/6.webp"
+                  alt="Hero section of sky dental clinic"
+                />
+              </a>
+              <div className="project-paras">
+                <p className="project-name">Sky Dental Clinic</p>
+                <p className="project-client">
+                  Dental Clinic website with modern user experience
+                </p>
+              </div>
+            </div>
 
             <div className="project">
               <a
@@ -393,6 +406,47 @@ function Home() {
                 <p className="project-client">
                   Interactive web portal for an advanced productivity SaaS.
                 </p>
+              </div>
+            </div>
+            <div className="project">
+              <a
+                href="#"
+              >
+                <img
+                  src="/images/4.webp"
+                  alt="Collins Healthcare Education Website."
+                />
+              </a>
+              <div className="project-paras">
+                <p className="project-name">Collins Healthcare Education</p>
+                <p className="project-client">
+                  Modern healthcare education platform featuring online registration and integrated PayPal/Venmo payments.
+                </p>
+              </div>
+            </div>
+            <div className="project">
+              <a
+                href="#"
+              >
+                <img src="/images/3.webp" alt="Ecommerce Store Project" />
+              </a>
+              <div className="project-paras">
+                <p className="project-name">Cartify</p>
+                <p className="project-client">
+                  React Ecommerce website for Online Selling
+                </p>
+              </div>
+            </div>
+            <div className="project">
+              <a
+                href="#"
+              >
+                <img src="/images/5.webp" alt="PharmaFlow Project" />
+              </a>
+              <div className="project-paras">
+                <p className="project-name">PharmaFlow</p>
+                <p className="project-client">
+                  Advanced Web App for a pharmacy with inventory and dashboard experience               </p>
               </div>
             </div>
           </div>
