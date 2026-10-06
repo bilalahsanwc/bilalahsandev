@@ -2,10 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import "../index.css";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import DesktopCanvaImg from "../assets/project1-desktop1canva.png";
-import townCenterDentistry from "../assets/hero.png";
-import DesktopCanvaImg3 from "../assets/project3-desktop1canva.png";
-
+import toast from "react-hot-toast";
 function Home() {
   const [idx, setIdx] = useState(0);
   const [reviewText, setReviewText] = useState("");
@@ -75,7 +72,6 @@ function Home() {
     }
   }, [openDialog, openProjectDialog]);
 
-  const [status, setStatus] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
@@ -86,11 +82,11 @@ function Home() {
       headers: { Accept: "application/json" },
     });
     if (res.ok) {
-      setStatus("SUCCESS");
+      toast.success("Message sent. I’ll be in touch soon.");
       form.reset();
       setOpenProjectDialog(false);
     } else {
-      setStatus("ERROR");
+      toast.error("Something went wrong. Please try again.");
     }
   };
 
@@ -282,28 +278,6 @@ function Home() {
             </div>
           </div>
         </div>
-      )}
-
-      {status === "SUCCESS" && (
-        <p className="submit-alert">
-          <i
-            onClick={() => setOpenDialog(false)}
-            className="fa-solid fa-xmark"
-          ></i>
-          ✅ Thanks for reaching out! Your message is on its way to me, and I’ll
-          be in touch soon to discuss your project in detail.
-        </p>
-      )}
-
-      {status === "ERROR" && (
-        <p className="submit-alert">
-          <i
-            onClick={() => setOpenDialog(false)}
-            className="fa-solid fa-xmark"
-          ></i>
-          ❌ Oops! Something went wrong while sending your message. Please try
-          again or contact me at hmbilal2024a@gmail.com.
-        </p>
       )}
 
       <section className="Home-content-container">
