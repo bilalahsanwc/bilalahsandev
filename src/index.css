@@ -1272,7 +1272,7 @@ footer a {
   }
 
   .testimonials {
-    height: 120vh;
+    min-height: max-content;
     display: flex;
     align-items: center;
     justify-content: center;
