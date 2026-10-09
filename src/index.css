@@ -36,6 +36,7 @@ nav {
   background-color: #1a1a1a;
   text-align: center;
   color: white;
+  z-index: 100;
 }
 
 .nav-content {

@@ -46,6 +46,12 @@ function Home() {
   const testimonials = [
     {
       review:
+        '"I recently had the pleasure of working with Bilal Ahsan to redesign my website into a more modern, up-to-date experience. Bilal was very knowledgeable in website development and, when I requested something that wasn\'t feasible, he came back with a great alternative that met my needs.His communication skills are exceptional, and he was very prompt with proofs and revisions.He assisted me through the entire process, including uploading my new website and working through the obstacles to get it fully functional.If you\'re seeking assistance with website development, I\'d encourage you to give Bilal a chance to help bring your vision to life. I\'m a very happy customer and really enjoy my updated, modern website."',
+      duration: "1 week",
+      Country: "Client From Orlando, Fl",
+    },
+    {
+      review:
         '"Bilal delivered high-quality work exactly as promised—and even ahead of schedule. Communication was smooth and professional throughout the project. They understood my requirements perfectly and went above and beyond to ensure I was happy with the final result. Highly recommend and will definitely work with them again in the future!"',
       duration: "6 weeks",
       Country: "Client From Morroco",
@@ -54,7 +60,7 @@ function Home() {
       review:
         '"⭐️⭐️⭐️⭐️⭐️ We had an amazing experience working with Bilal! He created a custom project for our business that looks professional, functions perfectly, and makes sharing our info incredibly easy. He was fast, communicative, and really took the time to make sure everything matched our brand. Highly recommend Bilal if you’re looking for top-quality work — he nailed it!"',
       duration: "1 week",
-      Country: "Client From USA",
+      Country: "Client From Redlands, California",
     },
   ];
 
