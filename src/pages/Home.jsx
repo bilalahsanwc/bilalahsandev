@@ -738,7 +738,7 @@ function Home() {
                 <a
                   target="_blank"
                   className="footer-li-sub"
-                  href="[https://github.com/bilalahsanwc](https://github.com/bilalahsanwc)"
+                  href="https://github.com/bilalahsanwc"
                   aria-label="GitHub"
                 >
                   GitHub
